@@ -55,8 +55,10 @@ public class home extends javax.swing.JFrame {
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("STUDENT RECORD MANAGEMENT");
 
+        RegNo.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         RegNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RegNoActionPerformed(evt);
@@ -126,7 +128,7 @@ public class home extends javax.swing.JFrame {
                     .addComponent(RegNo, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(view_details, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -218,7 +220,6 @@ public class home extends javax.swing.JFrame {
                         mob=rs.getString("mob");
                     }
                     vd.jTextFieldFname.setText(fnam);
-                    vd.jTextFieldFname.setEditable(false);
                     vd.jTextFieldLname.setText(lnam);
                     vd.jTextFieldFather.setText(fat);
                     vd.jTextFieldDob.setText(dob);

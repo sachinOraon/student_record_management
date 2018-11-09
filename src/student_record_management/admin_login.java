@@ -48,8 +48,12 @@ public class admin_login extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Admin Login");
 
+        jTextField1.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         jLabel2.setText("Username");
 
+        jLabel3.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         jLabel3.setText("Password");
 
         jButton1.setText("Login");
@@ -58,6 +62,8 @@ public class admin_login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+
+        jPasswordField1.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
 
         jButton2.setText("Reset");
         jButton2.addActionListener(new java.awt.event.ActionListener() {

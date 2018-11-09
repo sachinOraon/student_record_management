@@ -16,6 +16,7 @@ public class Student_record_management {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        new home().setVisible(true);
     }
     
 }
