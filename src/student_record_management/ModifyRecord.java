@@ -128,6 +128,7 @@ public class ModifyRecord extends javax.swing.JFrame {
 
         jTextAreaAdd.setColumns(20);
         jTextAreaAdd.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
+        jTextAreaAdd.setLineWrap(true);
         jTextAreaAdd.setRows(5);
         jScrollPane4.setViewportView(jTextAreaAdd);
 
@@ -139,6 +140,11 @@ public class ModifyRecord extends javax.swing.JFrame {
         });
 
         jButtonReset.setText("Reset");
+        jButtonReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonResetActionPerformed(evt);
+            }
+        });
 
         jButtonBack.setText("Go Back");
         jButtonBack.addActionListener(new java.awt.event.ActionListener() {
@@ -446,6 +452,21 @@ public class ModifyRecord extends javax.swing.JFrame {
         }
         }else{JOptionPane.showMessageDialog(null, "Failed to update record !",null, JOptionPane.ERROR_MESSAGE);}
     }//GEN-LAST:event_jButtonSubmitActionPerformed
+
+    private void jButtonResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResetActionPerformed
+        // TODO add your handling code here:
+        jTextFieldReg.setText(null);
+        jTextFieldFname.setText(null);
+        jTextFieldLname.setText(null);
+        jTextFieldFather.setText(null);
+        jTextFieldDob.setText(null);
+        jTextAreaAdd.setText(null);
+        jTextFieldBranch.setText(null);
+        jTextFieldSem.setText(null);
+        jTextFieldRoll.setText(null);
+        jTextFieldCpi.setText(null);
+        jTextFieldMob.setText(null);
+    }//GEN-LAST:event_jButtonResetActionPerformed
 
     /**
      * @param args the command line arguments

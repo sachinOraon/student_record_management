@@ -137,6 +137,7 @@ public class AddRecord extends javax.swing.JFrame {
 
         jTextAreaAdd.setColumns(20);
         jTextAreaAdd.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
+        jTextAreaAdd.setLineWrap(true);
         jTextAreaAdd.setRows(5);
         jScrollPane4.setViewportView(jTextAreaAdd);
 
@@ -148,6 +149,11 @@ public class AddRecord extends javax.swing.JFrame {
         });
 
         jButtonReset.setText("Reset");
+        jButtonReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonResetActionPerformed(evt);
+            }
+        });
 
         jButtonBack.setText("Go Back");
         jButtonBack.addActionListener(new java.awt.event.ActionListener() {
@@ -267,11 +273,12 @@ public class AddRecord extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldCpi, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldMob, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextFieldMob, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldCpi, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -352,6 +359,21 @@ public class AddRecord extends javax.swing.JFrame {
         }
         }else {JOptionPane.showMessageDialog(null, "Fill out all the forms !",null, JOptionPane.ERROR_MESSAGE);}
     }//GEN-LAST:event_jButtonSubmitActionPerformed
+
+    private void jButtonResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResetActionPerformed
+        // TODO add your handling code here:
+        jTextFieldReg.setText(null);
+        jTextFieldFname.setText(null);
+        jTextFieldLname.setText(null);
+        jTextFieldFather.setText(null);
+        jTextFieldDob.setText(null);
+        jTextAreaAdd.setText(null);
+        jTextFieldBranch.setText(null);
+        jTextFieldSem.setText(null);
+        jTextFieldRoll.setText(null);
+        jTextFieldCpi.setText(null);
+        jTextFieldMob.setText(null);
+    }//GEN-LAST:event_jButtonResetActionPerformed
 
     /**
      * @param args the command line arguments
